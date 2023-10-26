@@ -1,6 +1,6 @@
 import React from "react";
 const Nav: React.FC = () => {
-    return (<nav className="sticky top-0 flex items-center justify-between flex-wrap bg-purple-500 p-2">
+    return (<nav className="sticky top-0 flex items-center justify-between flex-wrap bg-purple-700 p-2">
     <div className="flex items-center flex-shrink-0 text-white mr-6">
        <img src="/images/logo.svg" className="fill-current h-16 w-16 mr-2" />
     </div>

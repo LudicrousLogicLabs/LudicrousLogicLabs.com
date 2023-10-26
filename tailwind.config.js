@@ -4,7 +4,11 @@ export default {
   content: [],
   darkMode: false,
   theme: {
-    extend: {},
+    extend: {
+      textColor: {
+        "navy-blue": "#001F3F",
+      },
+    },
   },
   plugins: [],
 };

@@ -1,6 +1,10 @@
 import React from "react";
+import useScrollPosition from "../hooks/useScroll";
 const Nav: React.FC = () => {
-    return (<nav className="sticky top-0 flex items-center justify-between flex-wrap bg-purple-700 p-2">
+    const scrollPosition = useScrollPosition();
+
+    const navClasses = scrollPosition > 0 ? "bg-purple-600" : "bg-transparent";
+    return (<nav className={`fixed w-full flex items-center justify-between flex-wrap ${navClasses} p-2 z-50`}>
     <div className="flex items-center flex-shrink-0 text-white mr-6">
        <img src="/images/logo.svg" className="fill-current h-16 w-16 mr-2" />
     </div>

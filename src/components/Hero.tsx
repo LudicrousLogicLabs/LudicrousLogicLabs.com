@@ -1,5 +1,4 @@
 import React from "react";
-import SignupForm from "./SignupForm";
 
 interface HeroProps {
     title: string;
@@ -7,7 +6,7 @@ interface HeroProps {
     image: string;
 }
 
-const Hero: React.FC<HeroProps> = ({ title, subtitle, image }) => {
+const Hero: React.FC<React.PropsWithChildren<HeroProps>> = ({ title, subtitle, image, children }) => {
     const bgImageStyle = {
         backgroundImage: `url(${image})`,
         backgroundSize: "cover",
@@ -19,7 +18,7 @@ const Hero: React.FC<HeroProps> = ({ title, subtitle, image }) => {
             <div className="space-y-4">
                 <h1 className="text-5xl font-bold text-red-400 drop-shadow-xl text-center">{title}</h1>
                 <h2 className="text-3xl text-pink-300 drop-shadow-sm text-center">{subtitle}</h2>
-                <SignupForm />
+                {children}
             </div>
         </div>
     )

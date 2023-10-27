@@ -18,16 +18,19 @@ const LandingPage: React.FC = () => {
                         title="AI Software"
                         description="We build AI software with cutting edge technology."
                         image="/images/brain.svg"
+                        alt="brain"
                         />
                     <Card
                         title="Fast and Scalable"
                         description="Our solutions are blazingly fast and infinitely scalable."
                         image="/images/rocket.svg"
+                        alt="rocket"
                         />
                     <Card
                         title="$$$ Money $$$"
                         description="We will make you rich."
                         image="/images/money.svg"
+                        alt="infinite money"
                         />
                 </div>
             </section>
